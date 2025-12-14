@@ -1,12 +1,16 @@
 ## Overview
 
-BATS is a testing framework for Bash shell scripts that provides supporting libraries and helpers for customizable test automation.
+* BATS
+  * == Bash shell scripts' testing framework
+    * allows
+      * customizing test automation -- via -- libraries & helpers
 
 ## Setup
 
-It's important to have a Rancher Desktop CI or release build installed and running with no errors before executing the BATS tests.
+* requirements
+  * Rancher Desktop running / NO errors
 
-### On Windows:
+### | Windows
 
 Clone the Git repository of Rancher Desktop, whether directly inside a WSl distro or on the host Win32.
 If the repository will be cloned on Win32, prior to cloning it, it's important to set up the Git configuration by running the following commands:
@@ -18,11 +22,11 @@ If the repository will be cloned on Win32, prior to cloning it, it's important t
 Note that changing `crlf` settings is not needed when you clone it inside a WSL distro.
 Regardless of the repository location, the BATS tests can be executed ONLY from inside a WSL distribution. So, if the repository is cloned on Win32, the repository can be located within a WSL distro from /mnt/c, as it represents the `C:` drive on Windows.
 
-### On Linux:
+### | Linux
 
 ImageMagick is required to take screenshots on failure.
 
-### All platforms:
+### | ALL platforms
 
 From the root directory of the Git repository, run the following commands to install BATS and its helper libraries into the BATS test directory:
 

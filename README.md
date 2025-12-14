@@ -2,35 +2,44 @@
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rancher-sandbox/rancher-desktop)
 
-Rancher Desktop is an open-source project that brings Kubernetes and
-container management to the desktop. It runs on Windows, macOS and
-Linux. This README pertains to the development of Rancher Desktop.
-For user-oriented information about Rancher Desktop, please see [rancherdesktop.io][home].
-For user-oriented documentation, please see [docs.rancherdesktop.io][docs].
+* Rancher Desktop
+  * == application + CL tool (`rdctl`)
+    * open-source
+    * application
+      * Electron-based
+      * TypeScript (mainly) + OTHER technologies
+        * Reason to provide other technologies:🧠be MORE cohesive🧠
+    * CL tool
+      * Go
+    * enable | desktop,
+      * Kubernetes
+      * container management
+  * ALLOWED |
+    * Windows
+    * macOS
+    * Linux
+  * [documentation][docs]
 
 [home]: https://rancherdesktop.io
 [docs]: https://docs.rancherdesktop.io
 
-
 ## Overview
 
-Rancher Desktop is an Electron application that is mainly written in TypeScript.
-It bundles a variety of other technologies in order to provide one cohesive application.
-It includes a command line tool, `rdctl`, which is written in Go.
-Most developer activities, such as running a development build, building/packaging
-Rancher Desktop, running unit tests, and running end-to-end tests, are done through
-`yarn` scripts. Some exceptions exist, such as running BATS tests.
-
+* developer activities
+  * done -- through --
+    * `yarn` scripts
+      * _Examples:_ running a development build, building/packaging Rancher Desktop, running unit tests, and running end-to-end tests
+    * ❓
+      * _Examples:_ BATS tests
 
 ## Setup
 
 ### Windows
 
-There are two options for building from source on Windows: with a
-[Development VM Setup](#development-vm-setup) or
-[Manual Development Environment Setup](#manual-development-environment-setup)
-with an existing Windows installation.
-
+* ways to build -- from -- source | Windows
+  * [Development VM Setup](#development-vm-setup)
+  * [Manual Development Environment Setup](#manual-development-environment-setup)
+  with an existing Windows installation.
 
 #### Development VM Setup
 
@@ -80,7 +89,6 @@ You can now clone the repository and run `yarn`.
 
 [development virtual machine]: https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/
 [automated setup script]: ./scripts/windows-setup.ps1
-
 
 #### Manual Development Environment Setup
 
@@ -421,11 +429,6 @@ invoked in the client code at `go/src/rdctl`.
 The API is currently at version 1, but is still considered internal and experimental, and
 is subject to change without any advance notice. At some point we expect that necessary
 changes to the API will go through a warning and deprecation notice.
-
-## Contributing
-
-Please see [the document about contributing](CONTRIBUTING.md).
-
 
 ## Further Reading
 

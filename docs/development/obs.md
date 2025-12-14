@@ -6,7 +6,6 @@ If you have not used OBS before, you should read
 [Important Concepts](#important-concepts) first. Then, come back to
 the other sections as you begin to work with the relevant parts of OBS.
 
-
 ## Getting Started
 
 The first thing you need to work with OBS is an installation of

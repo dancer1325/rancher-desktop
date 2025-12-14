@@ -1,161 +1,166 @@
-# Rancher Desktop Features
+# Rancher Desktop Features & status
 
-This document lists the high-level Rancher Desktop features and their current status.
+| Symbol   | Description                                       |
+|----------|---------------------------------------------------|
+| ✅        | released                                          |
+| 📅       | targeted \| [next] OR [later] milestone release   |
+| 🌞       | ❌NOT planned yet❌<br/> maybe \| future release  |
 
-| Symbol | Description |
-| ------------- | ---------------- |
-| :heavy_check_mark: | released |
-| :calendar: | targeted for the [next] or the [later] milestone release |
-| :sun_with_face:| not planned yet, but considering for a future release |
-
-Note:
-- Items under the [next] milestone are targeted for the upcoming monthly release, which usually happens on the 4th Wednesday of the month.
-- Items under the [later] milestone and any spillover items from the [next] milestone are targeted for the release after.
-- Items under the [next] and [later] milestones might change based on user feedback, technical challenges, etc.
+* items |
+  * [next] milestone
+    * target == upcoming monthly release
+      * NORMALLY | 4th Wednesday / EACH month
+  * [later] milestone & [next] milestone spillover
+    * target == release after
+  * [next] & [later] milestones
+    * might change -- based on --
+      * user feedback,
+      * technical challenges,
+      * etc.
 
 [next]: https://github.com/rancher-sandbox/rancher-desktop/projects/1?card_filter_query=milestone%3Anext
 [later]: https://github.com/rancher-sandbox/rancher-desktop/projects/1?card_filter_query=milestone%3Alater
 
 ### OS & Platform Support
 
-:heavy_check_mark: Win 10/11
+✅ Win 10/11
 
-:heavy_check_mark: Mac (Intel)
+✅ Mac (Intel)
 
-:heavy_check_mark: Mac M1 (apple silicon)
+✅ Mac M1 (apple silicon)
 
-:heavy_check_mark: Linux
+✅ Linux
 
-:sun_with_face: Linux AArch64
+🌞 Linux AArch64
 
-:sun_with_face: Windows on AArch64
+🌞 Windows on AArch64
 
-:sun_with_face: Windows Containers
+🌞 Windows Containers
 
 ### Container Engines
 
-:heavy_check_mark:  Multiple CR support (containerd, dockerd)
+✅  Multiple CR support (containerd, dockerd)
 
 ### Docker
 
-:heavy_check_mark: CLI
+✅ CLI
 
-:heavy_check_mark: Swarm
+✅ Swarm
 
-:heavy_check_mark: Compose
+✅ Compose
 
-:heavy_check_mark: Docker-only
+✅ Docker-only
 
 ### Kubernetes
 
-:heavy_check_mark: K3s bundled
+✅ K3s bundled
 
-:heavy_check_mark: Multiple versions support
+✅ Multiple versions support
 
 ### Bundled Tooling
 
-:heavy_check_mark: Helm
+✅ Helm
 
-:sun_with_face: Kubectx
+🌞 Kubectx
 
-:sun_with_face: [kwctl]
+🌞 [kwctl]
 
 [kwctl]: https://github.com/kubewarden/kwctl
 
 ### Image Management
 
-:heavy_check_mark: Build, Push, Pull & Scan images
+✅ Build, Push, Pull & Scan images
 
-:calendar: Registry Configuration
+📅 Registry Configuration
 
-:sun_with_face: Registry Access Control
+🌞 Registry Access Control
 
 ### Networking
 
-:heavy_check_mark: Simple VPN
+✅ Simple VPN
 
-:calendar: Restricted VPN (Ex: Cisco AnyConnect)
+📅 Restricted VPN (Ex: Cisco AnyConnect)
 
 ### Host Access
 
-:sun_with_face: GPU
+🌞 GPU
 
-:sun_with_face: USB
+🌞 USB
 
 ### Performance & System Resources
 
-:heavy_check_mark: System resource allocation
+✅ System resource allocation
 
-:sun_with_face: Pause app to save power  
+🌞 Pause app to save power
 
 ### Security
 
-:heavy_check_mark: Signed builds
+✅ Signed builds
 
-:sun_with_face: SBOM generation for images
+🌞 SBOM generation for images
 
-:sun_with_face: Image Signing
+🌞 Image Signing
 
-:sun_with_face: Attain SLSA Level
+🌞 Attain SLSA Level
 
 ### Troubleshooting
 
-:heavy_check_mark: View logs
+✅ View logs
 
-:heavy_check_mark: Partial Reset
+✅ Partial Reset
 
-:heavy_check_mark: Factory Reset
+✅ Factory Reset
 
 ### GUI/Installation
 
-:heavy_check_mark: View Containers
+✅ View Containers
 
-:heavy_check_mark: View Images
+✅ View Images
 
-:heavy_check_mark: Port forwarding
+✅ Port forwarding
 
-:heavy_check_mark: Auto updates
+✅ Auto updates
 
-:heavy_check_mark: Cluster exploration - Rancher Dashboard (Preview)
+✅ Cluster exploration - Rancher Dashboard (Preview)
 
-:sun_with_face: Container Exploration
+🌞 Container Exploration
 
-:sun_with_face: Configuration settings
+🌞 Configuration settings
 
-:sun_with_face: Start/Stop/Pause Containers
+🌞 Start/Stop/Pause Containers
 
-:sun_with_face: Silent (No-GUI) Install
+🌞 Silent (No-GUI) Install
 
-:sun_with_face: CLI/Headless mode
+🌞 CLI/Headless mode
 
-:calendar: Offline (air gap) mode
+📅 Offline (air gap) mode
 
-:heavy_check_mark: Rancher Desktop CLI aka rdctl (Preview)
+✅ Rancher Desktop CLI == `rdctl` (Preview)
 
 ### IDE Compatibility
 
-:heavy_check_mark: VS Code extension (With dockerd(moby))
+✅ VS Code extension (With dockerd(moby))
 
-:sun_with_face: Visual Studio IDE (Needs Validation)
+🌞 Visual Studio IDE (Needs Validation)
 
-:sun_with_face: Eclipse (Needs Validation)
+🌞 Eclipse (Needs Validation)
 
 ### Integration with Other Rancher Projects
 
-:heavy_check_mark: k3s
+✅ k3s
 
-:calendar: Rancher Dashboard
+📅 Rancher Dashboard
 
-:sun_with_face: Epinio
+🌞 Epinio
 
-:sun_with_face: NeuVector
+🌞 NeuVector
 
-:sun_with_face: Marketplace
+🌞 Marketplace
 
-:sun_with_face: Kubewarden
+🌞 Kubewarden
 
 ### Development
 
-:heavy_check_mark: Open source
+✅ Open source
 
-:heavy_check_mark: Public roadmap
+✅ Public roadmap
