@@ -21,3 +21,9 @@
 /src/go/rdctl/pkg/options/generated/*.go
 /e2e/e2e/test-results/.last-run.json
 /.yarn/
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/golinter.xml
+/.idea/modules.xml
+/.idea/rancher-desktop.iml
+/.idea/vcs.xml
